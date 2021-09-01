@@ -35,7 +35,7 @@ const healthCheckHandler = setInterval(async () => {
 }, 1000 * 60 * 60 * 24) // Daily
 
 const handler = setInterval(async () => {
-  const aurory = body.Projects.find(x => x.DisplayName === 'Aurory')
+  const aurory = await getAurory()
 
   if (aurory.FloorPrice < 23) {
     console.log('woohoo hit the floor price')
