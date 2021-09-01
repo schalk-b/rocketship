@@ -1,0 +1,12 @@
+{
+  "name": "rocketship",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "got": "^11.8.2",
+    "twilio": "^3.67.1"
+  }
+}
